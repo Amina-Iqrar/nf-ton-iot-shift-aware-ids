@@ -1,0 +1,11 @@
+\begin{tabular}{lccc}
+\toprule
+ & DoS+DDoS recall & XSS recall & AUROC (DoS+DDoS) \\
+\midrule
+Isolation Forest & 0.069 $\pm$ 0.004 & 0.535 $\pm$ 0.003 & 0.695 $\pm$ 0.012 \\
+MLP-emb. + OC-SVM (proposed) & 0.421 $\pm$ 0.140 & 0.553 $\pm$ 0.026 & 0.587 $\pm$ 0.018 \\
+Raw OC-SVM & 0.716 $\pm$ 0.014 & 0.586 $\pm$ 0.028 & 0.639 $\pm$ 0.015 \\
+MLP-emb. + OC-SVM (no masking) & 0.493 $\pm$ 0.192 & 0.560 $\pm$ 0.020 & 0.594 $\pm$ 0.026 \\
+LightGBM (supervised ref.) & 0.002 $\pm$ 0.002 & 0.000 $\pm$ 0.000 & 0.471 $\pm$ 0.081 \\
+\bottomrule
+\end{tabular}

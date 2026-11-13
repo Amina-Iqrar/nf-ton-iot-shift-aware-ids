@@ -1,0 +1,18 @@
+\begin{tabular}{lccc}
+\toprule
+ & Clean & Leaky & Delta \\
+\midrule
+L1 preprocessing / Isolation Forest / DoS+DDoS recall & 0.069 $\pm$ 0.004 & 0.068 $\pm$ 0.004 & -0.001 \\
+L1 preprocessing / Isolation Forest / AUROC & 0.695 $\pm$ 0.012 & 0.688 $\pm$ 0.021 & -0.007 \\
+L1 preprocessing / MLP-emb. + OC-SVM (proposed) / DoS+DDoS recall & 0.421 $\pm$ 0.140 & 0.715 $\pm$ 0.004 & +0.294 \\
+L1 preprocessing / MLP-emb. + OC-SVM (proposed) / AUROC & 0.587 $\pm$ 0.018 & 0.641 $\pm$ 0.019 & +0.054 \\
+L2 test-label threshold / Isolation Forest / balanced acc. & 0.447 $\pm$ 0.007 & 0.770 $\pm$ 0.024 & +0.323 \\
+L2 test-label threshold / Isolation Forest / realized FPR & 0.175 $\pm$ 0.016 & 0.329 $\pm$ 0.017 & +0.154 \\
+L2 test-label threshold / MLP-emb. + OC-SVM (proposed) / balanced acc. & 0.525 $\pm$ 0.052 & 0.636 $\pm$ 0.019 & +0.111 \\
+L2 test-label threshold / MLP-emb. + OC-SVM (proposed) / realized FPR & 0.370 $\pm$ 0.038 & 0.376 $\pm$ 0.180 & +0.006 \\
+L2 test-label threshold / Raw OC-SVM / balanced acc. & 0.657 $\pm$ 0.019 & 0.680 $\pm$ 0.007 & +0.023 \\
+L2 test-label threshold / Raw OC-SVM / realized FPR & 0.401 $\pm$ 0.039 & 0.349 $\pm$ 0.040 & -0.053 \\
+L3 held-out selection / recall & 0.421 $\pm$ 0.140 & 0.716 $\pm$ 0.014 & +0.295 \\
+L3 held-out selection / realized FPR & 0.370 $\pm$ 0.038 & 0.401 $\pm$ 0.039 & +0.032 \\
+\bottomrule
+\end{tabular}
